@@ -1,0 +1,15 @@
+﻿@model BookViewModel
+
+<a class="btn btn-danger" asp-controller="Books" asp-action="Index"><= Back</a>
+<div class="content container-allround container mt-4 mb-4">
+    <div class="card text-dark">
+        <img src="@Model.Book.ImageUrl" class="card-img-top" alt="Image of book">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Book.Title</h5>
+            <p class="card-text">@Model.Book.Description</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Available: @Model.IsReturned</strong></li>
+        </ul>
+    </div>
+</div>

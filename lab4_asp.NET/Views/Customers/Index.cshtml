@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Models.Customer>
+
+    <h1 class="display-4 mb-2 mt-5">Customers</h1>
+
+    <ul>
+        @foreach (var customer in Model)
+        {
+        <li>
+            <a class="lead text-white" asp-route-id="@customer.CustomerId" asp-controller="Customers" asp-action="Customer" >@customer.Name</a>
+        </li>
+            
+        }
+    </ul>
+

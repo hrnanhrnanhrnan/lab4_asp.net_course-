@@ -1,0 +1,24 @@
+﻿@model CustomerViewModel
+
+<a class="btn btn-danger" href="/Customers/"><= Back</a>
+<div class="container mt-4 mb-4">
+    <h4>@Model.Customer.Name</h4>
+    <h4>@Model.Customer.Address</h4>
+    <h4>@Model.Customer.PhoneNumber</h4>
+
+    <h5 class="lead mt-5">Borrowed books:</h5>
+    <ul>
+        @if (Model.Books != null)
+        {
+            foreach (var book in Model.Books)
+            {
+                <li>
+                    <h5>@book.Title</h5>
+                </li>
+            }
+        }
+    </ul>
+</div>
+
+<a class="btn btn-secondary" asp-controller="Customers" asp-action="Edit" asp-route-id="@Model.Customer.CustomerId">Edit Customer</a>
+<a class="btn btn-secondary" asp-controller="Customers" asp-action="Delete" asp-route-id="@Model.Customer.CustomerId">Delete Customer</a>

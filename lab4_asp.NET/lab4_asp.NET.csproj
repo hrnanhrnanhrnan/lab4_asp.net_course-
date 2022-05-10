@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\3d\scene.bin" />
+    <None Include="wwwroot\3d\scene.gltf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.24" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.24">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.24" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.24">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.3.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>
