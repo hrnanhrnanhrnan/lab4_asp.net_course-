@@ -1,5 +1,9 @@
 ﻿@model CustomerViewModel
 
+@{
+    ViewData["Title"] = Model.Customer.Name + " | Customers";
+}
+
 <a class="btn btn-danger" href="/Customers/"><= Back</a>
 <div class="container mt-4 mb-4">
     <h4>@Model.Customer.Name</h4>

@@ -1,5 +1,11 @@
 ﻿@model Models.Customer
 
+@{
+    ViewData["Title"] = $"Edit {Model.Name} | Customers";
+}
+
+<h3 class="mt-2 mb-1">Edit Customer: @Model.Name</h3>
+
 <form enctype="multipart/form-data" asp-controller="Customers" method="post" asp-action="Edit"
       class="mt-3">
     <input hidden asp-for="CustomerId" />

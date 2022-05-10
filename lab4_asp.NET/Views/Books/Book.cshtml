@@ -1,4 +1,7 @@
 ﻿@model BookViewModel
+@{
+    ViewData["Title"] = Model.Book.Title + " | Books";
+}
 
 <a class="btn btn-danger" asp-controller="Books" asp-action="Index"><= Back</a>
 <div class="content container-allround container mt-4 mb-4">

@@ -1,19 +1,22 @@
 ﻿@model IEnumerable<BookViewModel>
+@{
+    ViewData["Title"] = "Books";
+}
 
 <div class="container">
     <div class="row mt-2">
         @foreach (var book in Model)
         {
-        <div id="book-card-@book.Book.BookId" class="col-sm-6 book-card">
-            <div class="card m-2">
-                <img src="@book.Book.ImageUrl" class="card-img-top" alt="image of book">
-                <div class="card-body text-dark">
-                    <h6>@book.Book.Title</h6>
-                    <p class="card-text">@book.Book.Description</p>
-                    <p><strong>Available: @book.IsReturned</strong></p>
+            <div id="book-card-@book.Book.BookId" class="col-sm-6 book-card">
+                <div class="card m-2">
+                    <img src="@book.Book.ImageUrl" class="card-img-top" alt="image of book">
+                    <div class="card-body text-dark">
+                        <h6>@book.Book.Title</h6>
+                        <p class="card-text">@book.Book.Description</p>
+                        <p><strong>Available: @book.IsReturned</strong></p>
+                    </div>
                 </div>
             </div>
-        </div>
         }
     </div>
 
