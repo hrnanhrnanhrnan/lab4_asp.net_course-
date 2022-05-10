@@ -388,3 +388,4 @@ C:\Users\hrnan\source\repos\lab4_asp.NET\lab4_asp.NET\obj\Debug\netcoreapp3.1\Ra
 C:\Users\hrnan\source\repos\lab4_asp.NET\lab4_asp.NET\obj\Debug\netcoreapp3.1\Razor\Views\Books\Book.cshtml.g.cs
 C:\Users\hrnan\source\repos\lab4_asp.NET\lab4_asp.NET\obj\Debug\netcoreapp3.1\Razor\Views\Books\BookNotFound.cshtml.g.cs
 C:\Users\hrnan\source\repos\lab4_asp.NET\lab4_asp.NET\obj\Debug\netcoreapp3.1\Razor\Views\Books\BooksNotFound.cshtml.g.cs
+C:\Users\hrnan\source\repos\lab4_asp.NET\lab4_asp.NET\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Create.cshtml.g.cs

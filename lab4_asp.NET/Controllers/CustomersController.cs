@@ -58,6 +58,28 @@ namespace lab4_asp.NET.Controllers
             return View("CustomerNotFound", id);
         }
 
+        //Returns the view for the create action
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        //If the submitted model from the create view is valid, then the customer will be added to the database
+        //and the user is redirected to the customer action and view for the created customer
+        //if the validation fails then the user is returned to the Create view with the validation errors
+        [HttpPost]
+        public async Task<IActionResult> Create(Customer customer)
+        {
+            if (ModelState.IsValid)
+            {
+                var addedCustomer = await _customerRepository.Add(customer);
+                await _customerRepository.SaveChanges();
+                return RedirectToAction("Customer", new { id = addedCustomer.CustomerId });
+            }
+            return View();
+        }
+
         //fetches the specified customer and returns that to the view
         //if no customer is found then returns the CustomerNotFound view
         [HttpGet]
