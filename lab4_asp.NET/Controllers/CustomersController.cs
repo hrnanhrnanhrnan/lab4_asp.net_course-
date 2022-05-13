@@ -43,16 +43,29 @@ namespace lab4_asp.NET.Controllers
             var customer = await _customerRepository.GetSingle(id??1);
             if(customer != null)
             {
-                var customerBooksViewModel = new CustomerViewModel();
-                customerBooksViewModel.Customer = customer;
-                var customerBooks = await _customerBookRepository.GetAll();
+                //if joins should be done in the viewmodel instead
+                var customerViewModel = new CustomerViewModel
+                {
+                    Customer = customer,
+                    CustomerBooks = await _customerBookRepository.GetAll(),
+                    Books = await _bookRepository.GetAll()
+                };
 
-                customerBooksViewModel.Books = customerBooks.Where(cb => cb.CustomerId == customer.CustomerId)
-                    .Join(await _bookRepository.GetAll(),
-                    o => o.BookId, i => i.BookId,
-                    (cb, book) => new Book { BookId = book.BookId, Title = book.Title, Description = book.Description, IsBorrowed = book.IsBorrowed })
-                    .ToList();
-                return View(customerBooksViewModel);
+                customerViewModel = customerViewModel.GetCustomerVieModel();
+
+
+                // if joins can be done in the controller
+
+                //customerBooksViewModel.Customer = customer;
+                //var customerBooks = await _customerBookRepository.GetAll();
+
+                //customerBooksViewModel.Books = customerBooks.Where(cb => cb.CustomerId == customer.CustomerId)
+                //    .Join(await _bookRepository.GetAll(),
+                //    o => o.BookId, i => i.BookId,
+                //    (cb, book) => new Book { BookId = book.BookId, Title = book.Title, Description = book.Description, IsBorrowed = book.IsBorrowed })
+                //    .ToList();
+
+                return View(customerViewModel);
             }
             Response.StatusCode = 404;
             return View("CustomerNotFound", id);
