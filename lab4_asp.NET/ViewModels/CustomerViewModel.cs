@@ -23,7 +23,8 @@ namespace lab4_asp.NET.ViewModels
                     ImageUrl = b.ImageUrl,
                     IsBorrowed = b.IsBorrowed,
                     Title = b.Title
-                });
+                }).Distinct().ToList();
+
             return this;
         }
     }

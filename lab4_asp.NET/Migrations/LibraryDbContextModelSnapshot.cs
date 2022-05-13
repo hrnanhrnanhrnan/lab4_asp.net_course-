@@ -199,88 +199,88 @@ namespace lab4_asp.NET.Migrations
                             CustomerBookId = 1,
                             BookId = 1,
                             CustomerId = 1,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         },
                         new
                         {
                             CustomerBookId = 2,
                             BookId = 3,
                             CustomerId = 1,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         },
                         new
                         {
                             CustomerBookId = 3,
                             BookId = 3,
                             CustomerId = 2,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         },
                         new
                         {
                             CustomerBookId = 4,
                             BookId = 4,
                             CustomerId = 2,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         },
                         new
                         {
                             CustomerBookId = 5,
                             BookId = 5,
                             CustomerId = 2,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         },
                         new
                         {
                             CustomerBookId = 6,
                             BookId = 5,
                             CustomerId = 3,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         },
                         new
                         {
                             CustomerBookId = 7,
                             BookId = 5,
                             CustomerId = 4,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         },
                         new
                         {
                             CustomerBookId = 8,
                             BookId = 1,
                             CustomerId = 5,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         },
                         new
                         {
                             CustomerBookId = 9,
                             BookId = 4,
                             CustomerId = 6,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         },
                         new
                         {
                             CustomerBookId = 10,
                             BookId = 1,
                             CustomerId = 7,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         },
                         new
                         {
                             CustomerBookId = 11,
                             BookId = 5,
                             CustomerId = 7,
-                            EndLoanDate = new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local),
-                            LoanDate = new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local)
+                            EndLoanDate = new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local),
+                            LoanDate = new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local)
                         });
                 });
 

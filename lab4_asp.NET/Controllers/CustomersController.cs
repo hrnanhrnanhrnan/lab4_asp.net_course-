@@ -1,6 +1,7 @@
 ﻿using lab4_asp.NET.Services;
 using lab4_asp.NET.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Models;
 using System;
 using System.Collections.Generic;
@@ -49,7 +50,7 @@ namespace lab4_asp.NET.Controllers
                     Customer = customer,
                     CustomerBooks = await _customerBookRepository.GetAll(),
                     Books = await _bookRepository.GetAll()
-                };
+            };
 
                 customerViewModel = customerViewModel.GetCustomerVieModel();
 
@@ -91,6 +92,31 @@ namespace lab4_asp.NET.Controllers
                 return RedirectToAction("Customer", new { id = addedCustomer.CustomerId });
             }
             return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> AddNewLoan()
+        {
+            var customerBookVievModel = new CustomerBookViewModel();
+            var customers = await _customerRepository.GetAll();
+            var books = await _bookRepository.GetAll();
+
+            customerBookVievModel.Books = books.ToList();
+            customerBookVievModel.Customers = customers.ToList();
+
+            return View(customerBookVievModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddNewLoan(CustomerBookViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var addedCustomerBook = await _customerBookRepository.Add(model);
+                await _customerBookRepository.SaveChanges();
+                return RedirectToAction("Customer", new { id = addedCustomerBook.CustomerId });
+            }
+            return View(model);
         }
 
         //fetches the specified customer and returns that to the view

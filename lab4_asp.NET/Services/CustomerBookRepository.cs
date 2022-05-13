@@ -15,9 +15,10 @@ namespace lab4_asp.NET.Services
         {
             _context = context;
         }
-        public Task<CustomerBook> Add(CustomerBook entity)
+        public async Task<CustomerBook> Add(CustomerBook entity)
         {
-            throw new NotImplementedException();
+            var addedCustomerBook = await _context.CustomerBooks.AddAsync(entity);
+            return addedCustomerBook.Entity;
         }
 
         public Task<CustomerBook> Delete(CustomerBook entity)

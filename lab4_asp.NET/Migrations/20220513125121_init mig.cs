@@ -97,17 +97,17 @@ namespace lab4_asp.NET.Migrations
                 columns: new[] { "CustomerBookId", "BookId", "CustomerId", "EndLoanDate", "LoanDate" },
                 values: new object[,]
                 {
-                    { 1, 1, 1, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { 2, 3, 1, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { 3, 3, 2, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { 4, 4, 2, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { 5, 5, 2, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { 6, 5, 3, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { 7, 5, 4, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { 8, 1, 5, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { 9, 4, 6, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { 10, 1, 7, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) },
-                    { 11, 5, 7, new DateTime(2022, 5, 27, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 6, 0, 0, 0, 0, DateTimeKind.Local) }
+                    { 1, 1, 1, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) },
+                    { 2, 3, 1, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) },
+                    { 3, 3, 2, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) },
+                    { 4, 4, 2, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) },
+                    { 5, 5, 2, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) },
+                    { 6, 5, 3, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) },
+                    { 7, 5, 4, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) },
+                    { 8, 1, 5, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) },
+                    { 9, 4, 6, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) },
+                    { 10, 1, 7, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) },
+                    { 11, 5, 7, new DateTime(2022, 6, 3, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2022, 5, 13, 0, 0, 0, 0, DateTimeKind.Local) }
                 });
 
             migrationBuilder.CreateIndex(
